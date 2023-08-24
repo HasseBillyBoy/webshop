@@ -1,0 +1,72 @@
+body {
+  background-color: #b998cb;
+}
+
+h1 {
+  font-size: 120px;
+}
+
+h2 {
+  font-size: 80px;
+}
+
+#hej {
+  width: 200px;
+  height: 200px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.threegrid {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.articlegrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  /* rows er implicitte, der bliver bare så mange som der er brug for */
+}
+
+article {
+  background-color: #ade7c3;
+  border-radius: 5px;
+}
+
+.horizontalhalf {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr 1fr;
+  background-color: #ade7c3;
+  border-radius: 10px;
+}
+
+.horizontalhalfs {
+  display: grid;
+  gap: 4em;
+  grid-template-columns: 1fr 1fr;
+  background-color: #ade7c3;
+  border-radius: 10px;
+}
+
+.seasons {
+  font-size: 30px;
+}
+
+.productxt {
+  font-size: 25px;
+}
+
+.save {
+  width: 50px;
+  height: 50px;
+}
+
+.soldout {
+  width: 50px;
+  height: 50px;
+}
