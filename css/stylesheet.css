@@ -7,7 +7,7 @@ h1 {
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 40px;
 }
 
 #hej {
@@ -61,12 +61,13 @@ article {
   font-size: 25px;
 }
 
-.save {
-  width: 50px;
-  height: 50px;
+.onSale {
+  max-width: 100%;
+  background-color: whitesmoke;
 }
 
-.soldout {
-  width: 50px;
-  height: 50px;
+.soldOut {
+  max-width: 100%;
+  opacity: 50%;
+  background-color: grey;
 }
