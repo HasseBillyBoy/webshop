@@ -1,5 +1,10 @@
 body {
-  background-color: #b998cb;
+  background-color: #d3c4dc;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
 }
 
 h1 {
@@ -7,7 +12,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #hej {
@@ -17,6 +22,7 @@ h2 {
 
 img {
   max-width: 100%;
+  border-radius: 10px;
 }
 
 .threegrid {
@@ -27,6 +33,7 @@ img {
 
 .articlegrid {
   display: grid;
+  justify-content: center;
   gap: 1rem;
   grid-template-columns: repeat(4, 1fr);
   /* rows er implicitte, der bliver bare så mange som der er brug for */
@@ -70,4 +77,23 @@ article {
   max-width: 100%;
   opacity: 50%;
   background-color: grey;
+}
+
+.brand {
+  padding: 10px;
+  font-size: 25px;
+}
+
+.pris {
+  padding: 10px;
+  font-size: 25px;
+}
+
+.discount {
+  padding: 10px;
+  font-size: 25px;
+}
+
+.description {
+  padding: 18px;
 }
