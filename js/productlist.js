@@ -19,12 +19,12 @@ function showProduct(product) {
   const copy = template.cloneNode(true);
   //ændre indhold
   copy.querySelector("h2").textContent = product.productdisplayname;
-  copy.querySelector("p").textContent = product.price;
+  copy.querySelector("p").textContent = "Price: " + product.price + ",-";
   copy.querySelector(
     "img"
   ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
   copy
-    .querySelector(".read-more")
+    .querySelector(".readMore")
     .setAttribute("href", `product.html?id=${product.id}`);
   // "hvis produktet er udsolgt". vi skal have lavet en betingelse:
   if (product.soldout) {

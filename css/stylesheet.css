@@ -11,11 +11,21 @@ h1 {
   font-size: 120px;
 }
 
+.name {
+  font-size: 25px;
+  padding-left: 10px;
+  margin-top: 2px;
+}
+
+.produktnavn {
+  padding-left: 10px;
+}
+
 h2 {
   font-size: 30px;
 }
 
-#hej {
+#logo {
   width: 200px;
   height: 200px;
 }
@@ -40,7 +50,7 @@ img {
 }
 
 article {
-  background-color: #ade7c3;
+  background-color: #39a8c6;
   border-radius: 5px;
 }
 
@@ -48,7 +58,7 @@ article {
   display: grid;
   gap: 1em;
   grid-template-columns: 1fr 1fr;
-  background-color: #ade7c3;
+  background-color: #39a8c6;
   border-radius: 10px;
 }
 
@@ -56,12 +66,17 @@ article {
   display: grid;
   gap: 4em;
   grid-template-columns: 1fr 1fr;
-  background-color: #ade7c3;
+  background-color: #39a8c6;
   border-radius: 10px;
 }
 
 .seasons {
   font-size: 30px;
+}
+
+.readMore {
+  padding-left: 5px;
+  color: pink;
 }
 
 .productxt {
@@ -70,18 +85,19 @@ article {
 
 .onSale {
   max-width: 100%;
-  background-color: whitesmoke;
 }
 
 .soldOut {
   max-width: 100%;
-  opacity: 50%;
-  background-color: grey;
 }
 
 .brand {
   padding: 10px;
   font-size: 25px;
+}
+
+.price {
+  padding: 5px;
 }
 
 .pris {
