@@ -50,8 +50,10 @@ img {
 }
 
 article {
+  position: relative;
   background-color: #39a8c6;
-  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
 }
 
 .horizontalhalf {
@@ -83,14 +85,6 @@ article {
   font-size: 25px;
 }
 
-.onSale {
-  max-width: 100%;
-}
-
-.soldOut {
-  max-width: 100%;
-}
-
 .brand {
   padding: 10px;
   font-size: 25px;
@@ -98,6 +92,7 @@ article {
 
 .price {
   padding: 5px;
+  font-size: 25px;
 }
 
 .pris {
@@ -112,4 +107,75 @@ article {
 
 .description {
   padding: 18px;
+}
+
+.ribbon-wrap {
+  display: none;
+  width: 152px;
+  height: 152px;
+  overflow: hidden;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.ribbon-wrap::before,
+.ribbon-wrap::after {
+  display: none;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #f2467b;
+  position: absolute;
+  z-index: -1;
+}
+
+.ribbon-wrap::before {
+  top: 0;
+  right: 0;
+}
+
+.ribbon-wrap::after {
+  bottom: 0px;
+  left: 0px;
+}
+
+.productlistimg {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.ribbon {
+  display: none;
+  width: 225px;
+  font-size: 18px;
+  text-align: center;
+  padding: 8px 0;
+  background: #ff2166;
+  color: #fff;
+  position: absolute;
+  transform: rotate(-45deg);
+  right: -17%;
+  top: 29%;
+  z-index: 1;
+}
+
+article.soldout .ribbon,
+.ribbon-wrap {
+  display: block;
+}
+
+.badge {
+  display: none;
+  position: absolute;
+  font-size: 18px;
+  background-color: rgb(0, 255, 38);
+  color: rgb(28, 3, 3);
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  z-index: 0;
+}
+
+article.discount .badge {
+  display: block;
 }

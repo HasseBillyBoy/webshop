@@ -26,16 +26,20 @@ function showProduct(product) {
   copy
     .querySelector(".readMore")
     .setAttribute("href", `product.html?id=${product.id}`);
+  copy.querySelector(".badge").textContent = product.discount + "%";
+
   // "hvis produktet er udsolgt". vi skal have lavet en betingelse:
   if (product.soldout) {
-    copy.querySelector("article").classList.add("soldOut");
+    copy.querySelector("article").classList.add("soldout");
   }
+  //hvis productet har afslag i prisen, skal vi have en betingelse:
   if (product.discount) {
-    copy.querySelector("article").classList.add("onSale");
+    copy.querySelector("article").classList.add("discount");
   }
 
   //appende
   document.querySelector(".articlegrid").appendChild(copy);
 }
 
-//-- --//
+//document.querySelector(".article .badge").textContent =
+//product.discount + "%";
